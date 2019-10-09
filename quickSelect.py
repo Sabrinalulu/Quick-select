@@ -87,7 +87,7 @@ def main():
 	nOfEle = 11; 
 	items = list(range(1,nOfEle))
 	random.shuffle(items)
-	# print items
+	print items
 	
 	k = 8
 	# find kth smallest element
@@ -96,7 +96,7 @@ def main():
 	end = datetime.datetime.now()
 	delta = end-start
 	# if want to change to nanosecond, *1000
-	print delta.microseconds
+	print "microseconds=",delta.microseconds
 
 if __name__ == '__main__':
 	main()
